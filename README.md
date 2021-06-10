@@ -27,9 +27,9 @@ opkg install xinetd
 7z e checkmk-agent-synology_<version>.spk
 tar -zxvf package.tgz
 
-mkdir -p /opt/var/lib/check_mk_agent/cache
 mkdir /opt/etc/check_mk/
-mkdir /opt/usr/lib/check_mk_agent/plugins
+mkdir -p /opt/var/lib/check_mk_agent/cache
+mkdir -p /opt/usr/lib/check_mk_agent/plugins
 
 cp -p ./opt/etc/xinetd.d/check-mk-agent /opt/etc/xinetd.d/check-mk-agent
 cp -p ./opt/usr/lib/check_mk_agent/plugins/* /opt/usr/lib/check_mk_agent/plugins/
